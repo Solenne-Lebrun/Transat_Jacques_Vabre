@@ -1,0 +1,42 @@
+// 1. Choisissez vos propre couleurs
+$orange: #F37021;
+$brown: #410600;
+$grey: #B9B9B9;
+$beige-light: #f7f3d7;
+$icy-blue: #3B75B5;
+$white: #FFFFFF;
+$red: #FF0000;
+
+
+// 2. modifier les variables de Bulma par défaut
+$danger: $red;
+$primary: $icy-blue;
+$link: $brown;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// 4. modifier plus précisément les valeurs par défaut du thème
+$family-primary: Panton;
+$menu-item-hover-background-color: $orange;
+$menu-label-color: $brown;
+$body-background-color: $white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$footer-background-color: $icy-blue;
+$table-row-hover-background-color: $orange;
+
+// 5. Import the rest of Bulma
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > footer {
+  margin-top: auto;
+}
+
+@import "../node_modules/bulma/bulma";
